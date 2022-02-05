@@ -1,0 +1,23 @@
+{% extends 'Client/Common/base.html' %} {% block publicContent %}
+
+<!-- Table -->
+<div class="container mb-5">
+  <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+      {% for block in lastTenBlocks %}
+
+  <div class="row">
+    <div class="col-md-8">
+<ul class="list-group mb-3">
+  <li class="list-group-item"><p class="fs-12 text">Block Number : &nbsp <span>{{block['number']}}</span></p></li>
+  <li class="list-group-item"><span class="fs-12 text">hash : &nbsp <a>{{block['hash']}}</a></span></li>
+  <a type="button" style="border-radius: 0px 0px 4px 4px;" class="btn btn-dark" href="blockData/{{block['number']}}"><span>More </span></a>
+</ul>
+
+</div>
+    <div class="col-6 col-md-4 mb-3"></div>
+  </div>
+    {% endfor %}
+
+</div>
+
+{% endblock %}

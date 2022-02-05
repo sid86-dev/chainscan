@@ -1,0 +1,16 @@
+{% extends 'Client/Common/base.html' %} {% block publicContent %}
+
+<div class="horizontal-scroll">
+<table class="table table-light table-bordered" style="width: 100%;">
+
+  <tbody>
+  	{% for key in blockData %}
+    <tr>
+      <td style="padding-left: 35px"><span class="fs-6"> {{key}}</span></td>
+      <td><span class="fs-6">{{blockData[key]}}</span></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endblock %}
