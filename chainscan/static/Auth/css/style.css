@@ -1,0 +1,14 @@
+ 	html,body{
+  		width: 100%;
+  		height: 100%;
+  	}
+    .text{
+      overflow-wrap: break-word;
+    }
+
+    .horizontal-scroll {
+  overflow: hidden;
+  overflow-x: auto;
+  clear: both;
+  width: 100%;
+}
