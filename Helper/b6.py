@@ -9,6 +9,5 @@ web3 = Web3(Web3.HTTPProvider(infura_url))
 data = web3.eth.get_block('latest')
 
 if __name__ == "__main__":
-
 	for i in data:
 		print(i)
